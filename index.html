@@ -1,0 +1,100 @@
+<!--
+  Student Name: Romysaa Gamal Marey
+  University ID: 225111082
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal profile page built with HTML, CSS, and JavaScript.">
+  <title>My Profile | Field Training I</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="home">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#home">My Profile</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme-button" id="theme-toggle" type="button" aria-pressed="false">
+        🌙 Dark mode
+      </button>
+    </nav>
+    <div class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">FIELD TRAINING I · TASK 1</p>
+        <h1>Hello, I'm <span class="accent">Romysaa Marey</span></h1>
+        <p class="hero-text">A university student learning web development and building useful things for the web.</p>
+        <a class="primary-button" href="#about">Get to know me</a>
+      </div>
+      <img class="profile-image" src="images/me.jpg" alt="Illustrated profile placeholder; replace with your own photo">
+    </div>
+  </header>
+
+  <main>
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>About Me</h2>
+      </div>
+      <p class="about-copy">
+        I am a student at New Mansoura University, Faculty of Computer Science, CS Department, second level.
+      </p>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I ENJOY</p>
+        <h2>My Skills & Interests</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">💻</div>
+          <h3>Web Development</h3>
+          <p>Learning how to build websites using HTML, CSS, and JavaScript.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🧩</div>
+          <h3>Problem Solving</h3>
+          <p>Practicing logical thinking and breaking challenges into smaller steps.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">📚</div>
+          <h3>Continuous Learning</h3>
+          <p>Exploring new ideas, improving my skills, and learning something every day.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Contact Me</h2>
+        <p>Fill in the form below to test the contact interaction.</p>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <button class="primary-button" type="submit">Send message</button>
+        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Romysaa Marey · Field Training I</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
